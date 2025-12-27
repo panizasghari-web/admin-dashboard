@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <script src="./assets/js/script.js" defer></script>
+</head>
+
+<body class="font-Parastoo">
+
+    <!-- START ASIDE -->
+    <aside id="sidebar"
+        class="bg-[#202947] translate-x-50 md:translate-x-0 transition-all duration-500 h-screen md:fixed absolute z-50 w-50">
+
+        <div class="w-50 h-fit my-3.5">
+            <a href="#" class="flex justify-center items-center w-50">
+                <img class="w-40 object-cover" src="./assets/images/desktop-dark.png" alt="Admin Panel">
+            </a>
+        </div>
+
+        <div class="w-full h-full">
+            <ul class="w-full h-[70vh] flex flex-wrap">
+                <li
+                    class="w-full flex items-center border-y border-y-[#b1b7c6] transition-all duration-200 hover:bg-[#1c2029] hover:border-r-[5px] border-r-[#b1b7c6]">
+                    <a href="#" class="text-[#b1b7c6] flex w-full h-full items-center">
+                        <span class="material-symbols-rounded mr-2.5 ml-1">home</span>
+                        <span class="text-xl font-medium">خانه</span>
+                    </a>
+                </li>
+                <li
+                    class="w-full flex items-center border-b border-b-[#b1b7c6] transition-all duration-200 hover:bg-[#1c2029] hover:border-r-[5px] border-r-[#b1b7c6]">
+                    <a href="#" class="text-[#b1b7c6] flex w-full h-full items-center">
+                        <span class="material-symbols-rounded mr-2.5 ml-1">dashboard_customize</span>
+                        <span class="text-xl font-medium">امکانات</span>
+                    </a>
+                </li>
+                <li
+                    class="w-full flex items-center border-b border-b-[#b1b7c6] transition-all duration-200 hover:bg-[#1c2029] hover:border-r-[5px] border-r-[#b1b7c6]">
+                    <a href="#" class="text-[#b1b7c6] flex w-full h-full items-center">
+                        <span class="material-symbols-rounded mr-2.5 ml-1">group</span>
+                        <span class="text-xl font-medium">کاربران</span>
+                    </a>
+                </li>
+                <li
+                    class="w-full flex items-center border-b border-b-[#b1b7c6] transition-all duration-200 hover:bg-[#1c2029] hover:border-r-[5px] border-r-[#b1b7c6]">
+                    <a href="#" class="text-[#b1b7c6] flex w-full h-full items-center">
+                        <span class="material-symbols-rounded mr-2.5 ml-1">bar_chart</span>
+                        <span class="text-xl font-medium">نمودارها</span>
+                    </a>
+                </li>
+                <li
+                    class="w-full flex items-center border-b border-b-[#b1b7c6] transition-all duration-200 hover:bg-[#1c2029] hover:border-r-[5px] border-r-[#b1b7c6]">
+                    <a href="#" class="text-[#b1b7c6] flex w-full h-full items-center">
+                        <span class="material-symbols-rounded mr-2.5 ml-1">lock</span>
+                        <span class="text-xl font-medium">احراز هویت</span>
+                    </a>
+                </li>
+                <li
+                    class="w-full flex items-center border-b border-b-[#b1b7c6] transition-all duration-200 hover:bg-[#1c2029] hover:border-r-[5px] border-r-[#b1b7c6]">
+                    <a href="#" class="text-[#b1b7c6] flex w-full h-full items-center">
+                        <span class="material-symbols-rounded mr-2.5 ml-1">assignment</span>
+                        <span class="text-xl font-medium">فرم ها</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+    <div id="close-sidebar" class="backdrop-blur-xs bg-black/25 fixed inset-0 z-20 hidden"></div>
+    <!-- END ASIDE -->
+
+    <!-- START NAVBAR -->
+    <nav
+        class="w-full md:w-[calc(100vw-200px)] h-18.5 absolute left-0 top-0 flex items-center justify-between px-4 shadow-xl/20 text-[#61748f]">
+        <div class="h-full flex justify-center items-center md:hidden">
+            <button id="menu-toggle" class="flex items-center w-full mx-3 cursor-pointer">
+                <span class="material-symbols-rounded">menu</span>
+            </button>
+        </div>
+        <div class="w-[35%] md:w-[25%] md:ml-5 md:absolute md:left-0 h-full flex items-center">
+            <ul class="flex flex-row-reverse justify-around items-center w-full">
+                <li>
+                    <a href="#" class="flex items-center hover:text-black transition-all duration-300">
+                        <span class="material-symbols-rounded">search</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="flex items-center hover:text-black transition-all duration-300">
+                        <span class="material-symbols-rounded">help_outline</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="flex items-center hover:text-black transition-all duration-300">
+                        <span class="material-symbols-rounded">dark_mode</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="flex items-center hover:text-black transition-all duration-300">
+                        <span class="material-symbols-rounded">language</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="flex items-center hover:text-black transition-all duration-300">
+                        <span class="material-symbols-rounded">account_circle</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- END NAVBAR -->
+
+    <main class="h-[180vh] w-full md:w-[calc(100vw-200px)] absolute top-18.5 left-0">
+        <!-- START STATS CARDS -->
+        <section class="w-full flex flex-wrap justify-center items-center flex-row-reverse md:justify-evenly py-15">
+            <div id="first-card"
+                class="w-[60%] lg:w-[30%] border-[1.5px] border-[#202947] rounded-2xl px-6 pb-6 mb-10 lg:mb-0 bg-[#f1efef] hover:shadow-xl/20 hover:shadow-black transition-all duration-300">
+                <span
+                    class="material-symbols-rounded mr-3 mt-3 p-3 bg-[#e354d4] text-[#202947] rounded-full">shopping_bag</span>
+                <div class="flex justify-be items-center">
+                    <div class="flex justify-center items-center flex-wrap mr-3">
+                        <h1 class="w-full text-2xl text-bold">مجموع خرید</h1>
+                        <p class="w-full text-3xl text-bold">$25,544</p>
+                        <span class="w-full text-[#61748f]">24 ساعت اخیر</span>
+                    </div>
+                    <div class="progress flex justify-center items-center flex-col">
+                        <div class="w-25 h-25 rounded-full flex items-center justify-center shadow-sm"
+                            style="background: conic-gradient(#e354d4 0 81%, #e5e7eb 81% 100%);"></div>
+                        <span>81%</span>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <!-- ------------------------------------------------------ -->
+            <div id="second-card"
+                class="w-[60%] lg:w-[30%] border-[1.5px] border-[#202947] rounded-2xl px-6 pb-6 mb-10 lg:mb-0 bg-[#f1efef] hover:shadow-xl/20 hover:shadow-black transition-all duration-300">
+                <span
+                    class="material-symbols-rounded mr-3 mt-3 p-3 bg-[#ff8e6f] text-[#202947] rounded-full">analytics</span>
+                <div class="flex justify-evenly items-center">
+                    <div class="flex justify-center items-center flex-wrap mr-3">
+                        <h1 class="w-full text-2xl text-bold">مجموع درآمد</h1>
+                        <p class="w-full text-3xl text-bold">$65,311</p>
+                        <span class="w-full text-[#61748f]">24 ساعت اخیر</span>
+                    </div>
+                    <div class="progress flex justify-center items-center flex-col">
+                        <div class="w-25 h-25 rounded-full flex items-center justify-center shadow-sm"
+                            style="background: conic-gradient(#ff8e6f 0 50%, #e5e7eb 50% 100%);"></div>
+                        <span>50%</span>
+                    </div>
+                </div>
+            </div>
+            <!-- ------------------------------------------------------ -->
+            <div id="third-card"
+                class="w-[60%] lg:w-[30%] border-[1.5px] border-[#202947] rounded-2xl px-6 pb-6 mb-10 lg:mb-0 bg-[#f1efef] hover:shadow-xl/20 hover:shadow-black transition-all duration-300">
+                <span
+                    class="material-symbols-rounded mr-3 mt-3 p-3 bg-[#5c67f7] text-[#202947] rounded-full">assignment_ind</span>
+                <div class="flex justify-evenly items-center">
+                    <div class="flex justify-center items-center flex-wrap mr-3">
+                        <h1 class="w-full text-2xl text-bold">کل کاربران</h1>
+                        <p class="w-full text-3xl text-bold">2376</p>
+                        <span class="w-full text-[#61748f]">24 ساعت اخیر</span>
+                    </div>
+                    <div class="progress flex justify-center items-center flex-col">
+                        <div class="w-25 h-25 rounded-full flex items-center justify-center shadow-sm"
+                            style="background: conic-gradient(#5c67f7 0 30%, #e5e7eb 30% 100%);"></div>
+                        <span>30%</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END STATS CARDS-->
+
+        <!-- START USERS TABLE -->
+        <section class="w-full flex flex-wrap justify-center items-center flex-row-reverse md:justify-evenly lg:my-10">
+            <div class="w-[85%] overflow-x-auto rounded-lg shadow-md bg-white border border-gray-200">
+                <table class="min-w-full divide-y divide-gray-200">
+                    <thead>
+                        <tr class="bg-[#202947]">
+                            <th class="px-4 py-3 text-sm font-semibold text-white text-center whitespace-nowrap">عکس
+                            </th>
+                            <th class="px-4 py-3 text-sm font-semibold text-white text-center whitespace-nowrap">نام
+                                کاربر</th>
+                            <th class="px-4 py-3 text-sm font-semibold text-white text-center whitespace-nowrap">ایمیل
+                            </th>
+                            <th class="px-4 py-3 text-sm font-semibold text-white text-center whitespace-nowrap">
+                                تاریخثبت نام</th>
+                            <th class="px-4 py-3 text-sm font-semibold text-white text-center whitespace-nowrap">وضعیت
+                            </th>
+                            <th class="px-4 py-3 text-sm font-semibold text-white text-center whitespace-nowrap">عملیات
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white divide-y divide-gray-100">
+                        <tr class="bg-white even:bg-gray-50 hover:bg-[#f1efef] transition duration-200">
+                            <td class="px-4 py-3 text-center">
+                                <figure class="w-12 h-12 flex justify-center items-center mx-auto">
+                                    <img src="./assets/images/1.jpg"
+                                        class="w-12 h-12 object-cover rounded-full ring-2 ring-white shadow-sm"
+                                        alt="person1">
+                                </figure>
+                            </td>
+                            <td class="px-4 py-3">
+                                <p class="text-sm text-gray-700 text-center font-medium">علی رضایی</p>
+                            </td>
+                            <td class="px-4 py-3">
+                                <p class="text-sm text-gray-600 text-center">example@gmail.com</p>
+                            </td>
+                            <td class="px-4 py-3">
+                                <p class="text-sm text-gray-600 text-center">2025/03/15</p>
+                            </td>
+                            <td class="px-4 py-3">
+                                <p
+                                    class="inline-flex items-center justify-center px-3 py-1 rounded-full bg-green-100 text-green-800 text-sm font-semibold">
+                                    فعال</p>
+                            </td>
+                            <td class="px-4 py-3 flex justify-center items-center gap-3">
+                                <button class="cursor-pointer p-2 rounded-full hover:bg-gray-100 transition">
+                                    <span class="material-symbols-rounded text-red-600">delete</span>
+                                </button>
+                                <button class="cursor-pointer p-2 rounded-full hover:bg-gray-100 transition">
+                                    <span class="material-symbols-rounded text-green-600">visibility</span>
+                                </button>
+                            </td>
+                        </tr>
+
+                        <tr class="bg-white even:bg-gray-50 hover:bg-[#f1efef] transition duration-200">
+                            <td class="px-4 py-3 text-center">
+                                <figure class="w-12 h-12 flex justify-center items-center mx-auto">
+                                    <img src="./assets/images/2.webp"
+                                        class="w-12 h-12 object-cover rounded-full ring-2 ring-white shadow-sm"
+                                        alt="person1">
+                                </figure>
+                            </td>
+                            <td class="px-4 py-3">
+                                <p class="text-sm text-gray-700 text-center font-medium">سارا احمدی</p>
+                            </td>
+                            <td class="px-4 py-3">
+                                <p class="text-sm text-gray-600 text-center">example@gmail.com</p>
+                            </td>
+                            <td class="px-4 py-3">
+                                <p class="text-sm text-gray-600 text-center">2025/03/15</p>
+                            </td>
+                            <td class="px-4 py-3">
+                                <p
+                                    class="inline-flex items-center justify-center px-3 py-1 rounded-full bg-green-100 text-green-800 text-sm font-semibold">
+                                    فعال</p>
+                            </td>
+                            <td class="px-4 py-3 flex justify-center items-center gap-3">
+                                <button class="cursor-pointer p-2 rounded-full hover:bg-gray-100 transition">
+                                    <span class="material-symbols-rounded text-red-600">delete</span>
+                                </button>
+                                <button class="cursor-pointer p-2 rounded-full hover:bg-gray-100 transition">
+                                    <span class="material-symbols-rounded text-green-600">visibility</span>
+                                </button>
+                            </td>
+                        </tr>
+
+                        <tr class="bg-white even:bg-gray-50 hover:bg-[#f1efef] transition duration-200">
+                            <td class="px-4 py-3 text-center">
+                                <figure class="w-12 h-12 flex justify-center items-center mx-auto">
+                                    <img src="./assets/images/3.webp"
+                                        class="w-12 h-12 object-cover rounded-full ring-2 ring-white shadow-sm"
+                                        alt="person1">
+                                </figure>
+                            </td>
+                            <td class="px-4 py-3">
+                                <p class="text-sm text-gray-700 text-center font-medium">مریم محمدی</p>
+                            </td>
+                            <td class="px-4 py-3">
+                                <p class="text-sm text-gray-600 text-center">example@gmail.com</p>
+                            </td>
+                            <td class="px-4 py-3">
+                                <p class="text-sm text-gray-600 text-center">2025/03/15</p>
+                            </td>
+                            <td class="px-4 py-3">
+                                <p
+                                    class="inline-flex items-center justify-center px-3 py-1 rounded-full bg-green-100 text-green-800 text-sm font-semibold">
+                                    فعال</p>
+                            </td>
+                            <td class="px-4 py-3 flex justify-center items-center gap-3">
+                                <button class="cursor-pointer p-2 rounded-full hover:bg-gray-100 transition">
+                                    <span class="material-symbols-rounded text-red-600">delete</span>
+                                </button>
+                                <button class="cursor-pointer p-2 rounded-full hover:bg-gray-100 transition">
+                                    <span class="material-symbols-rounded text-green-600">visibility</span>
+                                </button>
+                            </td>
+                        </tr>
+
+                        <tr class="bg-white even:bg-gray-50 hover:bg-[#f1efef] transition duration-200">
+                            <td class="px-4 py-3 text-center">
+                                <figure class="w-12 h-12 flex justify-center items-center mx-auto">
+                                    <img src="./assets/images/4.jpg"
+                                        class="w-12 h-12 object-cover rounded-full ring-2 ring-white shadow-sm"
+                                        alt="person1">
+                                </figure>
+                            </td>
+                            <td class="px-4 py-3">
+                                <p class="text-sm text-gray-700 text-center font-medium">مهدی کریمی</p>
+                            </td>
+                            <td class="px-4 py-3">
+                                <p class="text-sm text-gray-600 text-center">example@gmail.com</p>
+                            </td>
+                            <td class="px-4 py-3">
+                                <p class="text-sm text-gray-600 text-center">2025/03/15</p>
+                            </td>
+                            <td class="px-4 py-3">
+                                <p
+                                    class="inline-flex items-center justify-center px-3 py-1 rounded-full bg-green-100 text-green-800 text-sm font-semibold">
+                                    فعال</p>
+                            </td>
+                            <td class="px-4 py-3 flex justify-center items-center gap-3">
+                                <button class="cursor-pointer p-2 rounded-full hover:bg-gray-100 transition">
+                                    <span class="material-symbols-rounded text-red-600">delete</span>
+                                </button>
+                                <button class="cursor-pointer p-2 rounded-full hover:bg-gray-100 transition">
+                                    <span class="material-symbols-rounded text-green-600">visibility</span>
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <!-- END USERS TABLE -->
+
+        <!-- START USERS FORM -->
+        <section class="w-full">
+            <div class="w-[85%] mx-auto my-20">
+                <form action="reg.php" name="reg" onsubmit="myVal(event)"
+                    class="bg-white rounded-2xl p-6 flex flex-col gap-5 md:flex-row md:items-end md:justify-between shadow-lg border border-[#e6eefc]">
+                    <div class="flex-1 min-w-full md:min-w-0 md:w-1/3">
+                        <label for="name" class="block text-[#202947] mb-2 font-medium text-sm">نام و نام
+                            خانوادگی:</label>
+                        <input type="text" id="name" name="name" placeholder="نام را وارد کنید"
+                            class="w-full p-3 rounded-lg border border-gray-200 bg-white text-[#0f1724] placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-[#5c67f7] transition-shadow duration-150" />
+                        <span id="name-span" class="hidden text-sm text-red-600 mt-2 pr-1">حداقل 3 کاراکتر!</span>
+                    </div>
+                    <div class="flex-1 min-w-full md:min-w-0 md:w-1/3">
+                        <label for="email" class="block text-[#202947] mb-2 font-medium text-sm">ایمیل:</label>
+                        <input type="text" id="email" name="email" placeholder="example@gmail.com"
+                            class="w-full p-3 rounded-lg border border-gray-200 bg-white text-[#0f1724] placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-[#5c67f7] transition-shadow duration-150" />
+                        <span id="email-span" class="hidden text-sm text-red-600 mt-2 pr-1">فرمت ایمیل درست نیست!</span>
+                    </div>
+                    <div
+                        class="flex-1 min-w-full md:min-w-0 md:w-1/3 flex flex-col md:flex-row md:items-center md:gap-4">
+                        <p class="text-[#202947] mb-2 md:mb-0 md:ml-2">وضعیت:</p>
+                        <label for="active"
+                            class="inline-flex items-center text-[#202947] mb-2 font-medium text-sm md:mb-0 md:mr-2">فعال</label>
+                        <input type="radio" id="active" name="status" value="active"
+                            class="w-4 h-4 accent-[#5c67f7] mb-3 md:mb-0 md:mr-4" />
+                        <label for="inactive"
+                            class="inline-flex items-center text-[#202947] mb-2 font-medium text-sm md:mb-0 md:mr-2">غیر
+                            فعال</label>
+                        <input type="radio" id="inactive" name="status" value="inactive"
+                            class="w-4 h-4 accent-[#5c67f7] md:mr-0" />
+                    </div>
+                    <div class="flex items-center justify-center md:ml-4 md:items-end">
+                        <button type="submit" value="send"
+                            class="px-6 py-3 bg-[#5c67f7] text-white font-semibold rounded-lg hover:bg-[#4c57f7] transition-shadow shadow-md hover:shadow-lg">ارسال</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!-- END USERS FORM -->
+    </main>
+
+</body>
+
+</html>
